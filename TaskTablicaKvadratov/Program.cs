@@ -8,3 +8,19 @@ void GetPow (int number)
     }
 }
 GetPow(5);
+
+// способ через массив
+
+int[] GetSquares(int n){
+    int[] arr = new int[n];
+
+    for (int i =1; i <= n; i++){
+        arr[i-1] = i*i;
+    }
+
+    return arr;
+}
+
+foreach (int num in GetSquares(5)){
+    System.Console.WriteLine (num);
+}
